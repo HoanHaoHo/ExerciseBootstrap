@@ -313,14 +313,16 @@
                     <li><a data-toggle="pill" href="#menu1">Math Fun</a></li>
                     <li><a data-toggle="pill" href="#menu2">FIZZ BUZZ</a></li>
                     <li><a data-toggle="pill" href="#menu3">Factorial</a></li>
-                    <li><a data-toggle="pill" href="#menu4">emordnilaP</a></li>
-                    <li><a data-toggle="pill" href="#menu5">Test Your Luck</a></li>
+                    <li><a data-toggle="pill" href="#menu4">Palindrome</a></li>
                 </ul>
                 <div class="tab-content">
                     <div id="menu1" class="tab-pane fade">
                         <div class="row">
                             <div class="col-md-12">
-                                Hello and welcome to the fun with math JS Exercise.
+                                <b>
+                                    Hello and welcome to the fun with math JS Exercise.
+                                </b>
+                               
                             </div>
                         </div>
                         <div class="row">
@@ -359,7 +361,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-5">
-                                        <button id="btnmath" class="btn btn-primary">click me</button>
+                                        <button id="btnmath" class="btn btn-primary">Math Fun</button>
                                     </div>
                                     <div class="col-md-offset-1 col-md-5">
                                         <button id="btncodemath" class="btn btn-success">Show Code</button>
@@ -434,7 +436,9 @@
                     <div id="menu2" class="tab-pane fade">
                         <div class="row">
                             <div class="col-md-12">
-                                Write a program that accepts two numbers between 1 and 100 from the user. The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen. For each number that is a multiple of the first number input by the user, print "Fizz" instead of the number. For each number that is a multiple of the second number input by the user, print "Buzz" instead of the number. For numbers that are multiples of both numbers, print "FizzBuzz" instead of the number.
+                                <b>
+                                    Write a program that accepts two numbers between 1 and 100 from the user. The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen. For each number that is a multiple of the first number input by the user, print "Fizz" instead of the number. For each number that is a multiple of the second number input by the user, print "Buzz" instead of the number. For numbers that are multiples of both numbers, print "FizzBuzz" instead of the number.
+                                </b>
                             </div>
                         </div>
                         <div class="row">
@@ -442,13 +446,13 @@
                             <div class="col-md-12">
                                 @*Inside here i will be adding several 2 column row*@
                                 <div class="row">
-                                    <div class="col-md-6">Enter number1 </div>
+                                    <div class="col-md-6">Enter number 1 </div>
                                     <div class="col-md-6">
                                         <input id="fbnum1" type="number" />
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-6">Enter number2 </div>
+                                    <div class="col-md-6">Enter number 2 </div>
                                     <div class="col-md-6">
                                         <input id="fbnum2" type="number" />
                                     </div>
@@ -517,17 +521,17 @@
                     <div id="menu3" class="tab-pane fade">
                         <div class="row">
                             <div class="col-md-12">
-                                Write a program that accepts two numbers between 1 and 100 from the user. The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen. For each number that is a multiple of the first number input by the user, print "Fizz" instead of the number. For each number that is a multiple of the second number input by the user, print "Buzz" instead of the number. For numbers that are multiples of both numbers, print "FizzBuzz" instead of the number.
-
+                                <b>
+                                    Write a program that accepts two numbers between 1 and 100 from the user. The program then iterates through all numbers from 1 to 100, printing numbers in ascending order to the screen. For each number that is a multiple of the first number input by the user, print "Fizz" instead of the number. For each number that is a multiple of the second number input by the user, print "Buzz" instead of the number. For numbers that are multiples of both numbers, print "FizzBuzz" instead of the number.
+                                </b>
                             </div>
-                              
                         </div>
                         <div class="row">
                             @*the left column will contain labels*@
                             <div class="col-md-12">
                                 @*Inside here i will be adding several 2 column row*@
                                 <div class="row">
-                                    <div class="col-md-6">Enter number1 </div>
+                                    <div class="col-md-6">Enter number 1 </div>
                                     <div class="col-md-6">
                                         <input id="factorial" type="number" />
                                     </div>
@@ -564,12 +568,66 @@
                         </div>
                     </div>
                     <div id="menu4" class="tab-pane fade">
-                        <h3>emordnilaP</h3>
-                        <p>Some content in menu 4.</p>
-                    </div>
-                    <div id="menu5" class="tab-pane fade">
-                        <h3>Test Your Luck</h3>
-                        <p>Some content in menu 5.</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <b>
+                                    Please enter a sentence and this will tell you if it is a palindrome. (A word backwards being the same word) Special characters such as !#$% etc. are taken out.
+                                </b>
+                            </div>
+                        </div>
+                        <div class="row">
+                            @*the left column will contain labels*@
+                            <div class="col-md-12">
+                                @*Inside here i will be adding several 2 column row*@
+                                <div class="row">
+                                    <div class="col-md-6">Enter the Sentence to Check </div>
+                                    <div class="col-md-6">
+                                        <input id="palindrome" type="text" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <button id="btnpal" class="btn btn-group">Check </button>
+                                    </div>
+                                    <div class="col-md-offset-1 col-md-5">
+                                        <button id="btncodepal" class="btn btn-danger">Show Code</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div id="palcode" class="col-md-12">
+                                        <pre class="brush: js">
+                                            $("#btnpal").click(function () {
+                                               var palSen = $("#palindrome").val();
+                                               if ($("#palindrome").val() != "") {
+            
+                                                palSen = palSen.replace(/\s/g, '');
+                                                palSen = palSen.replace(/[^a-zA-Z0-9]/g, '');
+
+                                                var palCheck = "";
+            
+                                                for (var index = (palSen.length) - 1; index >= 0; index--) {
+                                                     palCheck += palSen[index];
+                                                }
+                                              if (palSen.toUpperCase() == palCheck.toUpperCase()) {
+                                                $("#pal").text(palSen + " is a palindrome");
+                                              }
+                                              else {
+                                                $("#pal").text(palSen + " is not a palindrome");
+                                              }
+                                            }
+                                            else {
+                                                $("#pal").text("Please enter a value");
+                                            }
+                                        });
+                                        </pre>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <p id="pal"></p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">

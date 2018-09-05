@@ -62,6 +62,7 @@
     $("#btncodefizz").click(function () {
         $("#fizzcode").toggle();
     })
+
     $("#btnfact").click(function(){
         var num1 = Number($("#factorial").val());
         tempvalue = 1;
@@ -75,6 +76,35 @@
     $("#factcode").hide();
     $("#btncodefact").click(function () {
         $("#factcode").toggle();
-    })
+    });
+
+    $("#btnpal").click(function () {
+        var palSen = $("#palindrome").val();
+        if ($("#palindrome").val() != "") {
+            
+            palSen = palSen.replace(/\s/g, '');
+            palSen = palSen.replace(/[^a-zA-Z0-9]/g, '');
+
+            var palCheck = "";
+            
+            for (var index = (palSen.length) - 1; index >= 0; index--) {
+                palCheck += palSen[index];
+            }
+            if (palSen.toUpperCase() == palCheck.toUpperCase()) {
+                $("#pal").text(palSen + " is a palindrome");
+            }
+            else {
+                $("#pal").text(palSen + " is not a palindrome");
+            }
+        }
+        else {
+            $("#pal").text("Please enter a value");
+        }
+    });
+    $("#palcode").hide();
+    $("#btncodepal").click(function () {
+        $("#palcode").toggle();
+    });
+    
 })
         
